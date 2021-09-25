@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product card slider|glassomorphism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('shoe1.png')"><img src="shoe1.png" alt="no load" ></li>
+            <li onmouseover="changeImageSrc('shoe2.png')"><img src="shoe2.png" alt="no load" ></li>
+            <li onmouseover="changeImageSrc('shoe3.png')"><img src="shoe3.png" alt="no load" ></li>
+        </ul>
+        <div class="imgbox">
+            <h2>Nike Air ZOOM</h2>
+            <img src="shoe1.png" class="shoes">
+            <ul class="size">
+                <span>Size</span>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.shoes').src=anything;
+        }
+    </script>
+    
+</body>
+</html>
